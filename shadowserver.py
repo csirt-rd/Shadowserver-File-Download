@@ -10,7 +10,7 @@ import os
 
 match_downloads = '(https:\/\/dl.shadowserver.org\/[^"]+)'
 state_file = "./state_file"
-script_name = "shadowserver-to-splunk"
+script_name = "shadowserver-to-folder"
 default_download_folder="./shadowserver-reports"
 
 parser = argparse.ArgumentParser(description='Download all reports from shadowserver')
