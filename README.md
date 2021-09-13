@@ -19,7 +19,7 @@
   </p>
 </p>
 
-### Descargador de informes de Shadowserver
+### Descarga los informes de Shadowserver
 Script para descargar informes del servidor de sombra como archivos CSV elaborado en Python3.
 
 La secuencia de comandos puede mantener el estado en todas las ejecuciones y descargar solo los informes nuevos.
