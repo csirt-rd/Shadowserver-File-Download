@@ -3,7 +3,7 @@
     <img width="946" alt="Ciberseguridad" src="https://user-images.githubusercontent.com/46871300/125079966-38ef8380-e092-11eb-9b5e-8bd0314d9274.PNG">
   </a>
  
-   <h3 align="center">Implementacion de SOC con herramientas Open Source</h3>
+   <h3 align="center">Descarga los informes de Shadowserver</h3>
 
   <p align="center">
     Proporcionamos los primeros pasos a los nuevos equipos de manejo de incidentes.
