@@ -5,24 +5,14 @@
  
    <h3 align="center">Descarga los informes de Shadowserver</h3>
 
-  <p align="center">
-    Proporcionamos los primeros pasos a los nuevos equipos de manejo de incidentes.
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explora la guia »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">Ver Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Reporta un Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Solicitar función</a>
+  <p>
+  Script para la descargar de informes del servidor de Shadowserver como archivos CSV elaborado en Python3.
+  La secuencia de comandos puede mantener el estado en todas las ejecuciones y descargar solo los informes nuevos.
   </p>
 </p>
 
-### Descarga los informes de Shadowserver
-Script para descargar informes del servidor de sombra como archivos CSV elaborado en Python3.
 
-La secuencia de comandos puede mantener el estado en todas las ejecuciones y descargar solo los informes nuevos.
+
 
 ---
 
