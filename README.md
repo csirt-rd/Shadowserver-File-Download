@@ -41,3 +41,13 @@ Finalmente:
 ```
 python3 app.py
 ```
+
+#### Configuración:
+
+```python
+AUTH_DETAILS = {
+    'user': "",     #Cambiar como sea conveniente.
+    'password': "", #Cambiar como sea conveniente.
+    'login':'Login'
+}
+```
