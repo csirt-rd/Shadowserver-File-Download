@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from os import makedirs, getcwd
+from os import makedirs, getcwd, path
 import threading
 import requests
 import re
@@ -17,8 +17,9 @@ def download_element(session, url):
             except FileExistsError:
                 pass
             DEST_FILE = '/'.join([getcwd(), "shadowserver", FILENAME[11:-4], FILENAME])
-            with open(DEST_FILE, 'wb') as outputfile:
-                outputfile.write(RESPONSE.content)
+            if not path.isfile(DEST_FILE):
+                with open(DEST_FILE, 'wb') as outputfile:
+                    outputfile.write(RESPONSE.content)
     except:
         pass
 
