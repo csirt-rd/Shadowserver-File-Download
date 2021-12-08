@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from os import makedirs, getcwd, path
 import threading
 import requests
