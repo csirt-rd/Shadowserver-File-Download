@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
+import threading, requests, re
 from os import makedirs, getcwd, path
-import threading
-import requests
-import re
 
 MATCH = '(https:\/\/dl.shadowserver.org\/[^"]+)'
 SS_URL = "https://dl.shadowserver.org/reports/index.php"
 
 def download_element(session, url):
     try:
-        mutex.acquire()
         RESPONSE = session.get(url)
         if RESPONSE.status_code == 200:
             FILENAME = re.findall("filename=(.+)", RESPONSE.headers['content-disposition'])[0]
@@ -22,10 +19,7 @@ def download_element(session, url):
                 with open(DEST_FILE, 'wb') as outputfile:
                     outputfile.write(RESPONSE.content)
     except:
-        mutex.release()
         pass
-    else:
-        mutex.release()
 
 if __name__ == "__main__":
     try:
@@ -36,16 +30,15 @@ if __name__ == "__main__":
     RESPONSE = SESSION.post(
         SS_URL,
         data={
-        'user': "",
-        'password': "",
+        'user': "...",
+        'password': "...",
         'login':'Login'
         }
     )
     HTML_CONTENT = RESPONSE.content.decode('utf-8')
     threads = list()
-    mutex = threading.Lock()
-    for download_me in re.finditer(MATCH, HTML_CONTENT, re.MULTILINE):
-        URL = download_me.group(1)
+    URLS = [download_me.group(1) for download_me in re.finditer(MATCH, HTML_CONTENT, re.MULTILINE)][4400:]
+    for URL in URLS:
         x = threading.Thread(target=download_element, args=(SESSION, URL), daemon=True)
         threads.append(x)
         x.start()
