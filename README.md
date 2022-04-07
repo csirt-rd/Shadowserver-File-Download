@@ -54,8 +54,8 @@ python3 app.py
 
 ```python
 AUTH_DETAILS = {
-    'user': "",     #Cambiar como sea conveniente.
-    'password': "", #Cambiar como sea conveniente.
+    'user': "...",     # Cambiar como sea conveniente.
+    'password': "...", # Cambiar como sea conveniente.
     'login':'Login'
 }
 ```
