@@ -10,7 +10,7 @@
   </p>
 </p>
 
-## TLP: WHITE
+## TLP: CLEAR
 
 ---
 
